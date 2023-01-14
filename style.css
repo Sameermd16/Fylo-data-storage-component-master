@@ -22,6 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  background-color: var(--Very-Dark-Blue);
 }
 :root{
 --Pale-Blue: hsl(243, 100%, 93%);
@@ -79,20 +80,13 @@ body {
     background-color: var(--Very-Dark-Blue);
 }
 .storage-bar{
-    width: 76%;
-    height: 10px;
-    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-    border-radius: 15px;
-    margin-top: 1rem;
-    display: inline-block
-}
-.storage-bar-2{
-    width: 25%;
-    height: 12px;
+    width: 100%;
+    height: 13px;
     background-color: var(--Very-Dark-Blue);
     border-radius: 15px;
-    display: inline-block;
-    margin-left: -10px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
 }
 .total-storage{
     /* border: 1px solid white; */
@@ -108,16 +102,22 @@ body {
     color: white;
     font-weight: 400;
 }
-.dot{
+.storage-color{
+    width: 80%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 9px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.circle{
     width: 8px;
     height: 8px;
-    border-radius: 50%;
     background-color: white;
-    position: absolute;
-    /* top: 1px; */
-    left: 70%;
-    top: 65px;
+    border-radius: 50%;
+
 }
+
 .storage-left{
     border: 1px solid white;
     width: 120px;
