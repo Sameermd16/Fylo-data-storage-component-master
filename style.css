@@ -115,7 +115,6 @@ body {
     height: 8px;
     background-color: white;
     border-radius: 50%;
-
 }
 
 .storage-left{
@@ -132,6 +131,17 @@ body {
     top: -25%;
     left: 65%;
     padding: 0.8rem;
+}
+.storage-left:before{
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid white;
+    /* border-top: 10px solid white; */
+    content: '';
+    position: absolute;
+    right: -1px;
+    top: 47px;
+
 }
 .memory-left-letter{
     font-size: 8px;
@@ -151,6 +161,9 @@ body {
     }
     body{
         background: url(images/bg-mobile.png);
+    }
+    .storage-left::before{
+        display: none;
     }
 }
 @media only screen and (max-width: 499px){
